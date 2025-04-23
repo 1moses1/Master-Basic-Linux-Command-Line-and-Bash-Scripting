@@ -45,7 +45,7 @@ chmod +x info.sh
   - `awk '/^Mem:/ {print $2}'`: Prints total memory.
   - `awk '/^Mem:/ {print $4}'`: Prints available/free memory.
 
-#### 🟨 Section 3: Disk and Filesystem
+#### Section 3: Disk and Filesystem
 
 - `df -h --total`: Displays disk space usage, including a total at the end.
 - `mount | grep "^/dev"`: Lists mounted filesystems that are device-based.
@@ -53,7 +53,7 @@ chmod +x info.sh
 - `du -sh /var`: Shows total disk usage of the `/var` directory.
 - `2>/dev/null`: Silences permission-denied errors.
 
-#### 🟥 Section 4: Networking
+#### Section 4: Networking
 
 - `ip -o -4 addr show`: Lists all IPv4 addresses with interfaces.
 - `ip -o -6 addr show`: Lists all IPv6 addresses with interfaces.
@@ -63,14 +63,14 @@ chmod +x info.sh
 - `ps aux --sort=-%cpu`: Lists processes sorted by CPU usage.
 - `awk 'NR<=6 { ... }'`: Prints only the top 5 results (plus header).
 
-#### 🎨 Bonus: ANSI Color Codes
+#### Bonus: ANSI Color Codes
 
 - `\e[1;34m`, `\e[1;32m`: Used to colorize output (blue and green).
 - `\e[0m`: Resets to default color.
 
 ---
 
-### 🧪 Sample Output
+### Sample Output
 
 ```bash
 ===== SYSTEM INFORMATION =====
@@ -83,7 +83,7 @@ Date and Time: Tue Apr 23 14:00:32 CAT 2025
 
 ---
 
-### 📁 Files
+### Files
 
 - `info.sh`: Main script
 - `README.md`: Documentation
@@ -93,36 +93,3 @@ Date and Time: Tue Apr 23 14:00:32 CAT 2025
 ### 🛠️ GitHub Repository
 
 **[GitHub Repository](https://github.com/1moses1/Master-Basic-Linux-Command-Line-and-Bash-Scripting)**
-
----
-
-### 🚀 GitHub Push Instructions (from your current directory)
-
-Since you're in:
-```
-C:\Users\PC\Documents\Internship Program
-```
-
-Follow these steps:
-
-```powershell
-cd "C:\Users\PC\Documents\Internship Program"
-
-# Initialize Git and connect to remote (skip if already done)
-git init
-git remote add origin https://github.com/1moses1/Master-Basic-Linux-Command-Line-and-Bash-Scripting.git
-
-# Stage files
-git add info.sh README.md
-
-# Commit
-git commit -m "Add complete system info script with README"
-
-# Push to main branch (force if required)
-git branch -M main
-git push -u origin main
-```
-
----
-
-Let me know if you’d like me to prepare a `.zip` of everything or create a Figma/Notion visual summary.
