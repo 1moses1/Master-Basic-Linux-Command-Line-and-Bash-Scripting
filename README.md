@@ -4,7 +4,6 @@
 
 `info.sh` is a Bash script that displays essential system information in a structured, colorful format. It was developed as part of a DevOps internship at **Irembo** to practice core Linux command-line utilities and Bash scripting.
 
----
 
 ### Features
 
@@ -15,7 +14,6 @@ The script is divided into four main sections:
 3. **Disk and Filesystem Stats**
 4. **Networking and Resource Usage**
 
----
 
 ### How to Run
 
@@ -24,7 +22,6 @@ chmod +x info.sh
 ./info.sh
 ```
 
----
 
 ### Commands Explained
 
@@ -68,7 +65,6 @@ chmod +x info.sh
 - `\e[1;34m`, `\e[1;32m`: Used to colorize output (blue and green).
 - `\e[0m`: Resets to default color.
 
----
 
 ### Sample Output
 
@@ -81,14 +77,12 @@ Date and Time: Tue Apr 23 14:00:32 CAT 2025
 ...
 ```
 
----
 
 ### Files
 
 - `info.sh`: Main script
 - `README.md`: Documentation
 
----
 
 ### 🛠️ GitHub Repository
 
